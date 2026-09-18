@@ -1,0 +1,47 @@
+{
+  "threshold": 0.6,
+  "rows": [
+    {
+      "text": "注文が二つ届いた。余分な方を返金してください。",
+      "ms": 412,
+      "model": "jev-1.13.0",
+      "choice": "refund",
+      "probability": 1.0,
+      "probabilities": {
+        "complaint": 0.0,
+        "refund": 1.0,
+        "unclear": 0.0
+      },
+      "confidence": 1.0,
+      "action": "act"
+    },
+    {
+      "text": "届いた箱が凹んでいた。本当に腹が立つ。",
+      "ms": 312,
+      "model": "jev-1.13.0",
+      "choice": "complaint",
+      "probability": 0.97,
+      "probabilities": {
+        "unclear": 0.03,
+        "refund": 0.0,
+        "complaint": 0.97
+      },
+      "confidence": 0.96,
+      "action": "act"
+    },
+    {
+      "text": "この料金、どういうこと？",
+      "ms": 366,
+      "model": "jev-1.13.0",
+      "choice": "unclear",
+      "probability": 0.6,
+      "probabilities": {
+        "refund": 0.0,
+        "complaint": 0.4,
+        "unclear": 0.6
+      },
+      "confidence": 0.39,
+      "action": "act"
+    }
+  ]
+}
