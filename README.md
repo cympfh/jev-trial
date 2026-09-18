@@ -1,6 +1,6 @@
 # jev-trial
 
-TypeSafe の Jev（System One）で遊ぶ置き場。遊びは一つずつ PR にする。
+TypeSafe の Jev（System One）で遊ぶ置き場
 
 鍵は `TYPESAFE_API_KEY`。リポジトリには入れない。
 
