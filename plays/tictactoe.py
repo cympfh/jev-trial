@@ -31,7 +31,13 @@ def ask(key, board, mark):
     questions = {
         "cell": {
             "type": "choice",
-            "instructions": f"{mark} の番。空いているマスだけから、次に置くマスを一つ選ぶ。すでに置いてあるマスは選ばない。",
+            "instructions": (
+                f"{mark} の番。目的は {mark} がこのゲームに勝つこと。"
+                "勝てるマスがあればそれを取る。"
+                "相手が次の手で勝つなら、それを止める。"
+                "どちらでもなければ、自分の勝ちに一番近い最善手を選ぶ。"
+                "候補は空いているマスだけ。すでに置いてあるマスは選ばない。"
+            ),
             "criteria": {label: f"マス {label}" for label in empty},
         }
     }
