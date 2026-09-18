@@ -1,0 +1,45 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "fish_sings": {
+      "type": "noul",
+      "noul": 0.3
+    },
+    "moon_is_fish": {
+      "type": "noul",
+      "noul": 0.08
+    },
+    "trick": {
+      "type": "choice",
+      "choice": "chain",
+      "confidence": 0.67,
+      "probabilities": {
+        "contradiction": 0.04,
+        "not_a_puzzle": 0.02,
+        "missing": 0.18,
+        "chain": 0.76
+      }
+    },
+    "poem": {
+      "type": "score",
+      "score": 1.96,
+      "confidence": 0.61,
+      "legend": {
+        "0": "教科書の三段論法そのもの",
+        "1": "名前だけ変わった三段論法",
+        "2": "ポエムだが論理は直線",
+        "3": "ポエムで、論理も少しずれている"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.09,
+        "2": 0.68,
+        "3": 0.17
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 598,
+    "output_tokens": 104
+  }
+}
