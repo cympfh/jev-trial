@@ -1,0 +1,42 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "action": {
+      "type": "choice",
+      "choice": "open_door",
+      "confidence": 0.79,
+      "probabilities": {
+        "open_door": 0.84,
+        "turn_left": 0.04,
+        "shoot": 0.04,
+        "forward": 0.02,
+        "turn_right": 0.06
+      }
+    },
+    "danger": {
+      "type": "score",
+      "score": 1.67,
+      "confidence": 0.6,
+      "legend": {
+        "0": "脅威はない",
+        "1": "見えているがすぐではない",
+        "2": "今撃たないと危ない",
+        "3": "もう被弾している"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.36,
+        "2": 0.6,
+        "3": 0.04
+      }
+    },
+    "in_front": {
+      "type": "noul",
+      "noul": 0.41
+    }
+  },
+  "usage": {
+    "input_tokens": 662,
+    "output_tokens": 89
+  }
+}
